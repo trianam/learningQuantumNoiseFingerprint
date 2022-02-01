@@ -16,3 +16,4 @@ Abstract:
 * `runSvmTable.py`, `runSvmTableHoriz.py` and `runSvmTableTriang.py` are scripts that create the models, train them and create the latex tables to be used in the paper.
 * `calculateSlidingWindowTimeDat.ipynb` is used to create the datapoints for the figure on sliding window.
 * `plotDates.ipynb` is used to create the datapoints for the figure on slow dataset times.
+* `runTest.py` is an example of execution of all the pipeline excluded the creation of the circuit (the latter is not necessary because the data is included in the repository).

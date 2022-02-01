@@ -16,10 +16,7 @@
 #     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 from conf import Conf
-from ray import tune
 import numpy as np
-from hyperopt import hp
-from hyperopt.pyll.base import scope
 
 configGlobal = Conf({
 })

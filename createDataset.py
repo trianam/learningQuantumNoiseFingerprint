@@ -7,14 +7,14 @@ import sys
 import glob
 import numpy as np
 
-# basePath = 'data/walkerExtracted'
+basePath = 'data/walkerExtracted'
 # basePath = 'data/walkerSlow1000Extracted'
 # basePath = 'data/walkerSlow1500Extracted'
-basePath = 'data/walkerSlowExtracted'
+# basePath = 'data/walkerSlowExtracted'
 # basePath = 'data/walkerSimpleExtracted'
 # basePath = 'data/walkerSingleMeasuresExtracted'
 machinesGroups = [
-    # ['ibmq_athens', 'ibmq_santiago'],
+    ['ibmq_athens', 'ibmq_santiago'],
     # ['ibmq_casablanca', 'ibmq_santiago'],
     # ['ibmq_casablanca', 'ibmq_casablanca-bis'],
     # ['ibmq_casablanca', 'ibmq_casablanca'],
@@ -62,14 +62,14 @@ machinesGroups = [
     # ['ibmq_belem', 'ibmq_quito']
 
     # walkerSlow single temporal
-    ['ibmq_belem']
+    # ['ibmq_belem']
 ]
 outPath = 'data'
-# outPrefix = 'walker'
+outPrefix = 'walker'
 # outPrefix = 'walkerSlow1000'
 # outPrefix = 'walkerSlow1500'
 # outPrefix = 'walkerSlow'
-outPrefix = 'walkerSlowTemporal'
+# outPrefix = 'walkerSlowTemporal'
 # outPrefix = 'walkerSimple'
 # outPrefix = 'walkerSingleMeasures'
 shuffle = True
@@ -201,9 +201,9 @@ for j,w in enumerate([(0, 400), (400, 800), (800, 1200)]):
         customTemporalSplits["F-{}-{}".format(j+1, i+1)] = (w, (w[0]+400+i, w[1]+400+i))
 
 
-# customTemporalDataset = None
+customTemporalDataset = None
 # customTemporalDataset = 'A1'
-customTemporalDataset = sys.argv[1]
+# customTemporalDataset = sys.argv[1]
 
 
 # k = 200
